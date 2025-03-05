@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyController : BaseMonoBehaviour
+public class EnemyController : MonoBehaviour
 {
     [Tooltip("Movement Speed of Enemy")]
     [SerializeField] private float moveSpeed = 10f;

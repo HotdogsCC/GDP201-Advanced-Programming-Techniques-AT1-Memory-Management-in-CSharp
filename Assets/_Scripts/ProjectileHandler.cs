@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProjectileHandler : BaseMonoBehaviour
+public class ProjectileHandler : MonoBehaviour
 {
     [SerializeField] private float projectileSpeed;
     // Start is called before the first frame update
