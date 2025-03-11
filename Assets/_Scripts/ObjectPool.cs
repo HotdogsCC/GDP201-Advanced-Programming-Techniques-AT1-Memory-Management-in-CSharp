@@ -38,7 +38,14 @@ public class ObjectPool : MonoBehaviour
     public GameObject GetObject()
     {
         //Find first inactive object and return it
-        
+        foreach (var objectInPool in objectPool)
+        {
+            if (!objectInPool.activeSelf)
+            {
+                objectInPool.SetActive(true);
+                return objectInPool;
+            }
+        }
         
         //Otherwise create a new one and expand pool
         GameObject newObject = Instantiate(objectToPool);
